@@ -1,0 +1,20 @@
+@import "../global";
+.button{
+    align-items: center;
+    padding: 10px ;
+    background-color: $color-mass;
+    border: none;
+    border-radius: 8px;
+    @include font($color-white,bold,25px,$font-Montserrat);
+    outline: none;
+    max-width: 230px;
+    margin: auto;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(184, 151, 79);
+        transition: 0.4s;
+    }
+}
+.svg{
+    padding-right: 10px;
+}

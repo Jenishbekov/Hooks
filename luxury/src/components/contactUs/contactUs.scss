@@ -1,0 +1,10 @@
+@import "../global";
+.contactUs{
+    background-color: $color-text;
+    &__title{
+        @include font($color-white,bold,80px,$font-Montserrat);
+        text-align: center;
+        padding-top:196px;
+        padding-bottom:120px ;
+    }
+}

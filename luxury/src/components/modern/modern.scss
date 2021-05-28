@@ -1,0 +1,41 @@
+@import "../global";
+.modern{
+    &__title{
+        @include font ($color-text,bold,50px,$font-Cormorant);
+        text-align: center;
+        margin-top: 83px;
+    }
+    &__text{
+        @include font ($color-text,normal,25px,$font-Montserrat);
+        text-align: center;
+        width: 1250px;
+        margin-top: 34px;
+    }
+    &__texting{
+        @include font ($color-text,bold,48px,$font-Montserrat);
+        text-align: center;
+    }
+    &__menu{
+        margin-top: 82px;
+    }
+    &__images{
+        position: relative;
+        z-index: 1;
+    }
+    &__shortText{
+        position: absolute;
+        box-sizing: border-box;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color: $color-white;
+        border: none;
+        outline: none;
+        bottom: 0;
+        left: 50%;
+        z-index: 5;
+        transform:translateX(-50%);
+        padding: 0 100px;
+    }
+
+}

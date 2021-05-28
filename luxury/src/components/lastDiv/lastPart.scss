@@ -1,0 +1,85 @@
+@import "../global";
+.lastPart{
+    margin-bottom: 400px;
+    &__title{
+        @include font ($color-text,bold,50px,$font-Cormorant);
+        text-align: left;
+        margin-top: 261px;
+    }
+    &__text{
+        @include font($color-text,normal,25px,$font-Montserrat);
+        text-align: left;
+        width: 1260px;
+        margin-top: 6px;
+    }
+    &__adress{
+        margin-top: 167px;
+    }
+    &__destinations{
+        @include font ($color-text,normal,35px,$font-Montserrat);
+        text-align: left;
+        width: 520px;
+    }
+    &__view{
+        margin-top: 28px;
+        margin-bottom: 54px;
+    }
+    &__map{
+        @include font($color-text,bold,35px,$font-Montserrat);
+        text-align: left;
+    }
+    &__email{
+        @include font($color-text,normal,35px,$font-Montserrat);
+        text-align: left;
+        width: 560px;
+    }
+    &__end{
+        justify-content: space-between;
+    }
+    &__writeInformation{
+        margin-top: 167px;
+    }
+    &__name{
+        flex-direction: column;
+    }
+    &__emailAdress{
+        flex-direction: column;
+    }
+    &__message{
+        flex-direction: column;
+    }
+    &__form{
+        @include font ($color-text,normal,25px,$font-Robo);
+        margin-bottom: 8px;
+    }
+    &__input{
+        padding: 15px 150px;
+        border: 2px solid rgba(20, 39, 74, 0.5);
+        margin-bottom: 30px;
+    }
+    &__messageInput{
+        padding: 130px 150px;
+        border: 2px solid rgba(20, 39, 74, 0.5);
+    }
+    &__button{
+        background-color: $color-mass;
+        @include font($color-white,normal,25px,$font-Montserrat);
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        margin: left;
+        padding: 12px 25px;
+        display: flex;
+        justify-content: right;
+        text-align: left;
+        margin-top: 52px;
+        margin-left: 350px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(184, 151, 79);
+            transition: 0.4s;
+        }
+    }
+
+
+}

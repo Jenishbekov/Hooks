@@ -1,0 +1,65 @@
+@import "../global";
+.anotherRooms{
+
+    &__title{
+        @include font ($color-text,bold,60px,$font-Cormorant);
+        text-align: center;
+        margin-top: 81px;
+    }
+    &__texting{
+        @include font ($color-text,normal,25px,$font-Robo);
+        text-align: center;
+        width: 1200px;
+        margin-top: 29px;
+    }
+.single{
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    margin-top: 80px;
+    &__night{
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 90px;
+        justify-content: space-between;
+    }
+    &__singleText{
+        margin-top: -5px;
+    }
+    &__text{
+        @include font($color-white,bold,45px,$font-Montserrat);
+        width: 100%;
+        text-align: center;
+        background-color: $color-text;
+        outline: none;
+        border: none;
+        padding: 25px 410px;
+    }
+    &__detail{
+        align-items: center;
+        margin-left: 100px;
+    }
+    &__avg{
+        margin-right: 140px;
+    }
+    &__button{
+        background-color: $color-mass;
+        outline: none;
+        border: none;
+        padding: 17px 30px;
+        border-radius: 8px;
+        @include font($color-white,bold,20px,$font-Montserrat);
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(184, 151, 79);
+            transition: 0.4s;
+        }
+    }
+    &__svg{
+        cursor: pointer;
+    }
+    &__view{
+        @include font ($color-text,bold,25px,$font-Montserrat);
+        margin-left: 15px;
+    }
+}
+}

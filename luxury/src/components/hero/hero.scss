@@ -1,0 +1,55 @@
+@import "../global";
+.hero{
+    position: relative;
+    background-image: url(../../assets/img/her.png);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:193px;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        background-color: rgba($color: #14274A, $alpha: 0.5);
+        z-index:0.5;
+    }
+    &__menu{
+        position: relative;
+        z-index: 5;
+    }
+    &__text{
+        @include font($color-white,normal,45px,$font-Montserrat);
+    }
+    &__title{
+        @include font($color-white,bold,120px,$font-Cormorant);
+    }
+    &__texting{
+        @include font($color-white,bold,55px,$font-Cormorant);
+    }
+    &__description{
+        @include font($color-white,normal,25px,$font-Montserrat);
+        width: 500px;
+        margin-bottom: 100px;
+    }
+    &__svg{
+        padding-right: 13px;
+    }
+    &__swipe{
+        @include font ($color-text,bold,25px,$font-Montserrat)
+    }
+    &__button{
+        padding: 10px ;
+        background-color: $color-mass;
+        border: none;
+        border-radius: 8px;
+        @include font($color-white,bold,25px,$font-Montserrat);
+        outline: none;
+        max-width: 230px;
+   }
+
+
+}

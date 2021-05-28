@@ -1,0 +1,86 @@
+@import "../global";
+.footer{
+    background-image: url(../../assets/img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    align-items: center;
+    padding-top:70px;
+    padding-bottom: 64px;
+    justify-content: space-between;
+    &__texting{
+        flex-direction: column;
+        cursor: pointer;
+    }
+    &__item{
+        text-align: left;
+        margin-right: 100px;
+    }
+    &__row{
+        padding-top: 40px;
+    }
+    &__title{
+        @include font ($color-white,bold,25px,$font-Cormorant);
+        &:hover{
+            color: $color-mass;
+            transition: 0.5s;
+        }
+    }
+    &__text{
+        @include font($color-white,bold,9px,$font-Montserrat);
+        margin-left: 30px;
+        margin-top: 5px;
+        &:hover{
+            color: $color-mass;
+            transition: 0.5s;
+        }
+    }
+    &__link{
+        @include font($color-white,normal,14px,$font-Montserrat);
+        width: 264px;
+        margin-top:19px;
+    }
+    &__menu{
+        justify-content: center;
+    }
+    &__list{
+        @include font($color-white,normal,16px,$font-Montserrat);
+        padding: 10px;
+    }
+    &__blue{
+        @include font($color-white,normal,16px,$font-Montserrat);
+        padding: 10px;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    &__networks{
+        align-items: center;
+    }
+    &__facebook{
+        align-items: center;
+    }
+    &__twitter{
+        align-items: center;
+    }
+    &__instagramm{
+        align-items: center;
+    }
+    &__newsletter{
+        @include font ($color-white,normal,16px,$font-Montserrat);
+        padding-bottom: 30px;
+    }
+    &__input{
+        padding:12px 10px;
+        background-color: transparent;
+        border:2px solid $color-mass;
+        @include font ($color-white,normal,16px,$font-Montserrat);
+        outline: none
+    }
+    &__click{
+        @include font ($color-text,600,16px,$font-Montserrat);
+        padding: 12px 15px;
+        background-color: $color-mass;
+        border: 2px solid $color-mass;
+        cursor: pointer;
+    }
+}

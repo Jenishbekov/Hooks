@@ -1,0 +1,49 @@
+@import "../global";
+.place{
+    &__title{
+        @include font($color-text,normal,30px,$font-Montserrat);
+        text-align: center;
+        margin-top: 80px;
+    }
+    &__bedroom{
+        align-items: center;
+        margin-top: 95px;
+    }
+    &__line{
+        border-left: 2px solid  #14274A;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    &__suptitle{
+        @include font($color-text,bold,50px,$font-Cormorant);
+        margin-top: 30px
+    }
+    &__text{
+        @include font($color-text,normal,25px,$font-Montserrat);
+        width: 470px;
+        padding-top: 25px;
+    }
+    
+    &__img2{
+        min-height: 100%;
+        max-width: 97vh;
+    }
+    &__button{
+        background-color: $color-mass;
+        @include font($color-white,normal,20px,$font-Montserrat);
+        border: none;
+        border-radius: 8px;
+        padding: 13px 40px;
+        outline: none;
+        margin-top: 30px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(184, 151, 79);
+            transition: 0.5s;
+        }
+    }
+    &__base{
+        margin-top: 87px;
+        
+    }
+}

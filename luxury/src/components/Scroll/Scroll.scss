@@ -1,0 +1,18 @@
+@import "../global";
+.Scroll{
+    flex-direction: column;
+    &__item{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 70px;
+    }
+    &__text{
+        @include font($color-white,bold,25px,$font-Montserrat);
+        margin-bottom: 10px;
+    }
+    &__svg{
+        cursor: pointer;
+    }
+}
+
